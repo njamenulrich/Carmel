@@ -1,13 +1,60 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    {% block content %}
-    {% endblock %}
-</body>
+    <link rel="stylesheet" href="{% static 'dist/output.css' %}" />
+  </head>
+  <body>
+    <div class="flex flex-col justify-between h-screen">
+      <nav
+        class="shadow-md flex p-3 justify-between w-full"
+      >
+        <div class="flex gap-1 items-center">
+          <img
+            src="{% static 'img/logo/logo_1.png' %}"
+            alt="Logo"
+            class="object-cover"
+            height="40px"
+            width="30px"
+          />
+          <p class="font-bold text-4xl relative">
+            Carmel <sup class="font-bold text-sm absolute top-0">TM</sup>
+          </p>
+        </div>
+        <div class="flex gap-4 items-center">
+          <ul class="flex gap-5 font-bold">
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+          <button
+            class="font-bold border-2 border-[#CCE3DE] w-28 h-10 hover:bg-[#CCE3DE]"
+          >
+            SignIn
+          </button>
+          <button
+            class="bg-[#6B9080] font-bold p-1 w-28 h-10 hover:bg-white hover:border-2 hover:border-[#6B9080]"
+          >
+            SignUp
+          </button>
+        </div>
+      </nav>
+
+      <section class="h-40 w-full flex-grow relative">
+        {% block content %}
+        {% endblock %}
+      </section>
+
+      <footer class="border-t-2 w-full h-15 py-4 text-center shadow-md">
+        <p >
+          Copyright &copy; 2025 | All right reserved by Carmel<sup
+            class="font-light text-[8px] "
+            >TM</sup
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>

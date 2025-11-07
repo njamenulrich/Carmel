@@ -1,4 +1,22 @@
 {% extends "_base.html" %}
+{% load static %}
 {% block content %}
-    <p class="text-red-300/70">This is a simple paragraph</p>
+<!-- <section class="bg-red-500 h-1/2 w-full "> -->
+    <img src="{% static 'img/others/try_5.jpg' %}" alt="background" srcset="" class="w-full object-cover max-w-full max-h-full grayscale">
+    <div class="absolute top-0 right-10 text-white font-bold font-mono border-4 border-[#6B9080] border-t-0 flex justify-center items-center w-[25%] h-[25%] ">
+        <div class="text-[1.40rem]">
+            Welcome To Carmel The Web <br>
+            Platform That Ensures 
+        </div>
+            
+
+    </div>
+    <div class="absolute bottom-0 left-10 text-white font-bold font-mono border-4 border-[#6B9080] border-b-0 flex justify-center items-center w-[25%] h-[25%]">
+        <div class="text-[1.40rem]">
+            Job Seekers & Employers <br>
+            Find Their Perfect Match
+        </div>
+    </div>
+<!-- </section> -->
+
 {% endblock content %}

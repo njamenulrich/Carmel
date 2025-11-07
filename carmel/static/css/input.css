@@ -1,0 +1,20 @@
+
+@font-face {
+    font-family: 'OpenSans';
+
+    src: url('../fonts/OpenSans-Regular.ttf') format('ttf');
+    
+    font-weight: normal;
+
+    font-style: normal;
+
+    font-display: swap
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
