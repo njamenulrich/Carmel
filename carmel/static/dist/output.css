@@ -598,22 +598,6 @@ video {
   top: 0.25rem
 }
 
-.top-2 {
-  top: 0.5rem
-}
-
-.-top-0 {
-  top: -0px
-}
-
-.-top-1 {
-  top: -0.25rem
-}
-
-.top-5 {
-  top: 1.25rem
-}
-
 .block {
   display: block
 }
@@ -729,9 +713,39 @@ video {
   background-color: rgb(107 144 128 / var(--tw-bg-opacity, 1))
 }
 
+.bg-purple-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(126 34 206 / var(--tw-bg-opacity, 1))
+}
+
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1))
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1))
+}
+
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity, 1))
+}
+
+.bg-purple-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(216 180 254 / var(--tw-bg-opacity, 1))
+}
+
+.bg-indigo-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(165 180 252 / var(--tw-bg-opacity, 1))
+}
+
+.bg-pink-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(190 24 93 / var(--tw-bg-opacity, 1))
 }
 
 .object-cover {

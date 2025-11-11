@@ -44,12 +44,21 @@ INSTALLED_APPS = [
     'crispy_forms',
     'crispy_tailwind',
     "django_browser_reload",
+    "widget_tweaks",
+    "tailwind",
+    "theme",
 
     #local app
     'jobs',
     'users',
 
 ]
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
+TAILWIND_APP_NAME = "theme"
 
 AUTH_USER_MODEL = 'users.Users'
 
