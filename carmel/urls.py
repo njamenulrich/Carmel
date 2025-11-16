@@ -20,7 +20,7 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 
-from .views import home
+from .views import home, SignUp
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,6 +28,7 @@ urlpatterns = [
     path("", home, name = "home"),
     path("__reload__/", include("django_browser_reload.urls")),
     path("accounts/", include("django.contrib.auth.urls")),
+    path("accounts/signup/", SignUp.as_view(), name="signup"),
 ]
 
 if settings.DEBUG:
